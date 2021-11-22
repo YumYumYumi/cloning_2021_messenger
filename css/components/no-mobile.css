@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+#no-mobile {
+  background-color: #2b3a41;
+  color: #b9c9d0;
+  font-family: "Courgette", cursive;
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  top: 0;
+  left: 20;
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+#smaller {
+  color: rgb(236, 187, 156);
+  animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    infinite;
+}
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}

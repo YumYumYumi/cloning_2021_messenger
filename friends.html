@@ -3,25 +3,121 @@
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Friends</title>
   </head>
-  <body>
+  <body id="friends-body">
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Serivce</span>
+        <span>WLAN</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>21:58</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
+        <span>99%</span>
         <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i> Channels' and Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://images.unsplash.com/photo-1457732815361-daa98277e9c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Free soul</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Langauge Channels</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1101&q=80"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                About France: Culture, Langauge, Foods,...
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>3</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://images.unsplash.com/photo-1570235351489-42bdb994e6a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                About Germany: Bier
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>1023</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Langauge Friends</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://images.unsplash.com/photo-1523956468692-1e219561ea46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Tobias (Germany)
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
@@ -31,22 +127,31 @@
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-comment fa-2x"></i
-          ></a>
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">8</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
+          <a class="nav__link" href="find.html"
             ><i class="fas fa-search fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
+          <a class="nav__link" href="more.html"
             ><i class="fas fa-ellipsis-h fa-2x"></i
           ></a>
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <div>Your screen is too big.</div>
+      <div>
+        <span>Please make it </span>
+        <span id="smaller">smaller.</span>
+      </div>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
